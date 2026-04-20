@@ -8,69 +8,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; }
-        /* Warna kustom berdasarkan logo (Hijau RKPD & Gold Aksen) */
-        .bg-rkpd-green { background-color: #065f46; } /* Hijau Tua */
-        .text-rkpd-green { color: #065f46; }
-        .bg-rkpd-gold { background-color: #fbbf24; } /* Kuning/Gold */
-        .border-rkpd-gold { border-color: #fbbf24; }
+        /* Tema Hitam Putih Custom */
+        .bg-rkpd-black { background-color: #111111; } 
+        .text-rkpd-black { color: #111111; }
+        .border-rkpd-black { border-color: #111111; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-white text-gray-900">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-200">
         <div class="container mx-auto px-6 py-2 flex justify-between items-center">
             <a href="#">
                 <img src="Logo RKPD.png" alt="Logo Yayasan RKPD" class="h-20 w-auto object-contain">
             </a>
             
             <div class="hidden md:flex space-x-8 font-semibold items-center">
-                <a href="#" class="text-slate-600 hover:text-rkpd-green transition">Beranda</a>
-                <a href="#tentang" class="text-slate-600 hover:text-rkpd-green transition">Tentang Kami</a>
-                <a href="#program" class="text-slate-600 hover:text-rkpd-green transition">Program</a>
-                <a href="#kontak" class="bg-rkpd-green text-white px-6 py-2 rounded-lg hover:bg-opacity-90 shadow-lg transition">Donasi</a>
+                <a href="#" class="text-gray-500 hover:text-black transition">Beranda</a>
+                <a href="#tentang" class="text-gray-500 hover:text-black transition">Tentang Kami</a>
+                <a href="#program" class="text-gray-500 hover:text-black transition">Program</a>
+                <a href="#kontak" class="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 shadow-sm transition">Donasi</a>
             </div>
         </div>
     </nav>
 
-    <section class="relative bg-rkpd-green text-white py-32 px-6 overflow-hidden">
-        <div class="absolute top-0 right-0 w-64 h-64 bg-rkpd-gold opacity-10 rounded-full -mr-32 -mt-32"></div>
-        
+    <section class="relative bg-white text-black py-32 px-6 border-b border-gray-100">
         <div class="container mx-auto text-center relative z-10">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Menebar Manfaat,<br>Menjemput Keberkahan</h1>
-            <p class="text-lg md:text-xl mb-10 text-emerald-50 max-w-2xl mx-auto">Bersama Yayasan RKPD, kita wujudkan kepedulian nyata untuk saudara kita yang membutuhkan.</p>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">Menebar Manfaat,<br>Menjemput Keberkahan</h1>
+            <p class="text-lg md:text-xl mb-10 text-gray-600 max-w-2xl mx-auto font-light">Bersama Yayasan RKPD, kita wujudkan kepedulian nyata untuk saudara kita yang membutuhkan.</p>
             <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#program" class="bg-rkpd-gold text-rkpd-green px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition transform">Jelajahi Program</a>
-                <a href="https://www.instagram.com/yayasan.rkpd/" target="_blank" class="border-2 border-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-rkpd-green transition">Galeri Kegiatan</a>
+                <a href="#program" class="bg-black text-white px-10 py-4 rounded-full font-bold hover:bg-gray-800 transition">Jelajahi Program</a>
+                <a href="https://www.instagram.com/yayasan.rkpd/" target="_blank" class="border-2 border-black px-10 py-4 rounded-full font-bold hover:bg-black hover:text-white transition">Galeri Kegiatan</a>
             </div>
         </div>
     </section>
 
-    <section id="program" class="py-24 bg-white">
+    <section id="program" class="py-24 bg-gray-50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-rkpd-green">Program Unggulan</h2>
-                <div class="w-20 h-1.5 bg-rkpd-gold mx-auto mt-4 rounded-full"></div>
+                <h2 class="text-3xl md:text-4xl font-bold text-black uppercase tracking-widest">Program Unggulan</h2>
+                <div class="w-12 h-1 bg-black mx-auto mt-4"></div>
             </div>
             
             <div class="grid md:grid-cols-3 gap-10">
-                <div class="group bg-slate-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100">
-                    <div class="h-48 bg-gray-200 overflow-hidden">
-                        <div class="w-full h-full bg-rkpd-green flex items-center justify-center text-emerald-200 opacity-80">Foto Kegiatan RKPD</div>
+                <div class="group bg-white rounded-none overflow-hidden shadow-sm hover:shadow-md transition border border-gray-200">
+                    <div class="h-48 bg-gray-100 overflow-hidden grayscale hover:grayscale-0 transition duration-500">
+                        <div class="w-full h-full flex items-center justify-center text-gray-400">Foto Kegiatan RKPD</div>
                     </div>
                     <div class="p-8">
-                        <h3 class="text-xl font-bold mb-3 group-hover:text-rkpd-green transition">Santunan Anak Yatim</h3>
-                        <p class="text-slate-600 leading-relaxed">Penyaluran bantuan rutin untuk pemenuhan kebutuhan pendidikan dan kesejahteraan pokok adik-adik yatim.</p>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-gray-700 transition">Santunan Anak Yatim</h3>
+                        <p class="text-gray-500 leading-relaxed font-light">Penyaluran bantuan rutin untuk pemenuhan kebutuhan pendidikan dan kesejahteraan pokok adik-adik yatim.</p>
                     </div>
                 </div>
-
-                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-rkpd-green text-white py-12">
+    <footer class="bg-black text-white py-12">
         <div class="container mx-auto px-6 text-center">
             <img src="Logo RKPD.png" alt="Logo" class="h-16 mx-auto mb-6 brightness-0 invert">
-            <p class="mb-6 opacity-80">&copy; 2026 Yayasan RKPD. All Rights Reserved.</p>
+            <p class="mb-6 opacity-50 font-light text-sm">&copy; 2026 Yayasan RKPD. All Rights Reserved.</p>
         </div>
     </footer>
 
